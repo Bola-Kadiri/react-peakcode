@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+#content1{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 90.4vh;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 
+190deg
+, rgba(42, 49, 102, 0.4), rgba(42, 49, 102, 0.8) ), url("../asset/bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+.para1{
+    position: relative;
+    color: #fff;  
+    /* right: 30px;  */
+    line-height: 50px;
+    bottom: 15px;
+}
+.para1 h1{
+    font-size: 40px;
+    position: relative;
+    bottom: 10px;
+    top: 1px;
+}
+.para1 h2{
+    color: #fa255e;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+.image1{
+    position: relative;
+    /* border: 5px solid rgb(108, 204, 108); */
+    /* left: 30px; */
+    
+     
+}
+.image1 img{
+    border-radius: 15px;
+    opacity: 0.7;
+}
+#port{
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+}
+
+@media screen and (max-width:780px){
+     .nav-link{
+        width: 50%; 
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right:-15px;
+        top:50px;
+        z-index: 1;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s all ease-out;
+        
+    
+    }
+    .change{
+    
+        height: 200px;
+        width: 100%;
+        padding: 20px 0px;
+        background-color: rgba(202, 48, 48, 0.7);
+        transition: 0.3s ease-in-out;
+    
+        
+         
+        
+    }
+    
+    .hamburger{
+        display: block;
+        margin-right: 20px;
+    }
+    .logo h3{
+        margin-left: 20px;
+    }
+    .image1{
+        display: none;
+    }
+    .para1 h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .para1 h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+   button{
+        width: 50%;
+        font-size: 15px;
+        padding: 5px 10px;
+        
+    }
+
+}
+@media screen and (max-width:200px){
+    button{
+        width: 50%;
+        font-size: 15px;
+        padding: 5px 0px;
+        border-radius: 5px;
+       
+   
+   }
+}
